@@ -33,19 +33,19 @@ namespace projectPracticeSecond
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnImgLoad = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tBoxDepartment = new System.Windows.Forms.ComboBox();
+            this.tBoxIsAdmin = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tBoxPosition = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tBoxPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tBoxWorkerNum = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tBoxPWD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBoxName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegist = new System.Windows.Forms.Button();
@@ -75,19 +75,19 @@ namespace projectPracticeSecond
             // 
             this.panel1.Controls.Add(this.btnImgLoad);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.tBoxDepartment);
+            this.panel1.Controls.Add(this.tBoxIsAdmin);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.tBoxPosition);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.tBoxPhone);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.tBoxWorkerNum);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.tBoxPWD);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tBoxName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -114,31 +114,35 @@ namespace projectPracticeSecond
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox2
+            // tBoxDepartment
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.tBoxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tBoxDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tBoxDepartment.FormattingEnabled = true;
+            this.tBoxDepartment.Items.AddRange(new object[] {
             "부서1",
             "부서2",
             "부서3",
             "부서4",
             "부서5",
             "부서6"});
-            this.comboBox2.Location = new System.Drawing.Point(115, 341);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(125, 28);
-            this.comboBox2.TabIndex = 4;
+            this.tBoxDepartment.Location = new System.Drawing.Point(115, 341);
+            this.tBoxDepartment.Name = "tBoxDepartment";
+            this.tBoxDepartment.Size = new System.Drawing.Size(125, 28);
+            this.tBoxDepartment.TabIndex = 4;
             // 
-            // comboBox1
+            // tBoxIsAdmin
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tBoxIsAdmin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tBoxIsAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tBoxIsAdmin.FormattingEnabled = true;
+            this.tBoxIsAdmin.Items.AddRange(new object[] {
             "관리자",
             "평사원"});
-            this.comboBox1.Location = new System.Drawing.Point(115, 288);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 28);
-            this.comboBox1.TabIndex = 3;
+            this.tBoxIsAdmin.Location = new System.Drawing.Point(115, 288);
+            this.tBoxIsAdmin.Name = "tBoxIsAdmin";
+            this.tBoxIsAdmin.Size = new System.Drawing.Size(125, 28);
+            this.tBoxIsAdmin.TabIndex = 3;
             // 
             // label7
             // 
@@ -160,12 +164,12 @@ namespace projectPracticeSecond
             this.label6.Text = "관리자 :";
             this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox5
+            // tBoxPosition
             // 
-            this.textBox5.Location = new System.Drawing.Point(115, 235);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 1;
+            this.tBoxPosition.Location = new System.Drawing.Point(115, 235);
+            this.tBoxPosition.Name = "tBoxPosition";
+            this.tBoxPosition.Size = new System.Drawing.Size(125, 27);
+            this.tBoxPosition.TabIndex = 1;
             // 
             // label5
             // 
@@ -177,12 +181,12 @@ namespace projectPracticeSecond
             this.label5.Text = "직책 :";
             this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox4
+            // tBoxPhone
             // 
-            this.textBox4.Location = new System.Drawing.Point(115, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 1;
+            this.tBoxPhone.Location = new System.Drawing.Point(115, 179);
+            this.tBoxPhone.Name = "tBoxPhone";
+            this.tBoxPhone.Size = new System.Drawing.Size(125, 27);
+            this.tBoxPhone.TabIndex = 1;
             // 
             // label4
             // 
@@ -194,12 +198,12 @@ namespace projectPracticeSecond
             this.label4.Text = "전화번호 :";
             this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox3
+            // tBoxWorkerNum
             // 
-            this.textBox3.Location = new System.Drawing.Point(115, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 1;
+            this.tBoxWorkerNum.Location = new System.Drawing.Point(115, 128);
+            this.tBoxWorkerNum.Name = "tBoxWorkerNum";
+            this.tBoxWorkerNum.Size = new System.Drawing.Size(125, 27);
+            this.tBoxWorkerNum.TabIndex = 1;
             // 
             // label3
             // 
@@ -211,12 +215,13 @@ namespace projectPracticeSecond
             this.label3.Text = "사번 :";
             this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // tBoxPWD
             // 
-            this.textBox2.Location = new System.Drawing.Point(115, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 1;
+            this.tBoxPWD.Location = new System.Drawing.Point(115, 76);
+            this.tBoxPWD.Name = "tBoxPWD";
+            this.tBoxPWD.PasswordChar = '*';
+            this.tBoxPWD.Size = new System.Drawing.Size(125, 27);
+            this.tBoxPWD.TabIndex = 1;
             // 
             // label2
             // 
@@ -228,12 +233,12 @@ namespace projectPracticeSecond
             this.label2.Text = "비밀번호 :";
             this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // tBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 1;
+            this.tBoxName.Location = new System.Drawing.Point(115, 29);
+            this.tBoxName.Name = "tBoxName";
+            this.tBoxName.Size = new System.Drawing.Size(125, 27);
+            this.tBoxName.TabIndex = 1;
             // 
             // label1
             // 
@@ -296,23 +301,24 @@ namespace projectPracticeSecond
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBoxName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tBoxPosition;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tBoxPhone;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tBoxWorkerNum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tBoxPWD;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tBoxDepartment;
+        private System.Windows.Forms.ComboBox tBoxIsAdmin;
         private System.Windows.Forms.Button btnRegist;
         private System.Windows.Forms.Button btnImgLoad;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox hone;
     }
 }

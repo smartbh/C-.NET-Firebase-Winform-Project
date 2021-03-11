@@ -4,7 +4,7 @@ using System.Text;
 
 namespace projectPracticeSecond
 {
-    class Image_Modal
+    public class Image_Modal
     {
         public string Img { get; set; }
     }

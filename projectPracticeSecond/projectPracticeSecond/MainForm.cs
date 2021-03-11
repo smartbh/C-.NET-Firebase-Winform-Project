@@ -1,9 +1,11 @@
 ﻿using MetroFramework.Forms;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Windows.Forms;
 
@@ -25,6 +27,8 @@ namespace projectPracticeSecond
         public delegate void SetFirebaseClientCallback(IFirebaseClient ClientObj);
         public SetFirebaseClientCallback setFirebaseClient;
 
+        private Point mousePoint; //마우스 포인트(이동,최대화용)
+
         public MainForm()
         {
             InitializeComponent();
@@ -39,22 +43,25 @@ namespace projectPracticeSecond
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(MainFormManagerData.administerBool.ToString());
-            //MessageBox.Show(MainFormManagerData.name.ToString());
-            //MessageBox.Show(MainFormManagerData.phone.ToString());
-            //MessageBox.Show(MainFormManagerData.pwd.ToString());
-            //MessageBox.Show(MainFormManagerData.workDepartment.ToString());
-            //MessageBox.Show(MainFormManagerData.workerNum.ToString());
-            //MessageBox.Show(MainFormManagerData.workPosition.ToString());
-
             MessageBox.Show(MainFormClient.ToString());
+
+            byte[] imgByte = Convert.FromBase64String(MainFormManagerData.Img);
+            
+            MemoryStream ImgMs = new MemoryStream();
+
+            ImgMs.Write(imgByte, 0, Convert.ToInt32(imgByte.Length));
+
+            Bitmap ThumbnailBitmap = new Bitmap(ImgMs, false);
+
+            ImgMs.Dispose();
 
             lblWorkNumTXT.Text = MainFormManagerData.workerNum.ToString();
             lblWorkNameTXT.Text = MainFormManagerData.name;
             lblWorkDepartmentTXT.Text = MainFormManagerData.workDepartment;
             lblWorkPositionTXT.Text = MainFormManagerData.workPosition;
+            pictureBox1.Image = ThumbnailBitmap;
 
             if (MainFormManagerData.administerBool) //조건을 MainOBJ를 받아와서 MainOBJ bool 타입이 true인지 false인지.
             {
@@ -78,8 +85,7 @@ namespace projectPracticeSecond
             MainFormClient = Cobj;
         }
 
-        private Point mousePoint; //마우스 포인트(이동,최대화용)
-
+        #region
         /// <summary>
         /// 프로그램 종료 버튼
         /// </summary>
@@ -90,7 +96,7 @@ namespace projectPracticeSecond
             Application.Exit();
         }
 
-        #region
+       
         /// <summary>
         /// 프로그램 최소화 버튼
         /// </summary>
@@ -100,9 +106,7 @@ namespace projectPracticeSecond
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        #endregion
-
-
+        
         /// <summary>
         /// 마우스로 프로그램 이동시키는 부분
         /// </summary>
@@ -122,6 +126,11 @@ namespace projectPracticeSecond
             }
         }
 
+        /// <summary>
+        /// 타이틀바 더블클릭, 화면 최대, 일반화
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainBarPanel_DoubleClick(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
@@ -159,7 +168,7 @@ namespace projectPracticeSecond
                 this.WindowState = FormWindowState.Maximized;
             }
         }
-
+        #endregion
 
         //버튼으로 폼 옮겨 다니기
 
@@ -263,8 +272,6 @@ namespace projectPracticeSecond
 
             this.setFirebaseClient += new SetFirebaseClientCallback(managerWorkForm.SetClientData);
             setFirebaseClient(MainFormClient);
-
-
 
             managerWorkForm.TopLevel = false;
             managerWorkForm.TopMost = true;

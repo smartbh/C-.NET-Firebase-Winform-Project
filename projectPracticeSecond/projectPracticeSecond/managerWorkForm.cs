@@ -19,7 +19,7 @@ namespace projectPracticeSecond
     {
         public ManagerData managerWorkFormManagerData;
         public static IFirebaseClient managerWorkFormFirebaseClient;
-
+        
         public managerWorkForm()
         {
             InitializeComponent();
@@ -69,6 +69,9 @@ namespace projectPracticeSecond
 
         private async void btnRegist_Click(object sender, EventArgs e)
         {
+            bool isItAdmin;
+         //이미지를 등록하는 코드
+            #region
             MemoryStream ms = new MemoryStream();
 
             pictureBox1.Image.Save(ms, ImageFormat.Jpeg);
@@ -84,9 +87,25 @@ namespace projectPracticeSecond
 
             SetResponse response = await managerWorkFormFirebaseClient.SetTaskAsync("manager/010-1111-2222/", data);
 
-            Image_Modal result = response.ResultAs<Image_Modal>();
+            Image_Modal ImgResult = response.ResultAs<Image_Modal>();
 
             MessageBox.Show("이미지 등록됨!");
+            #endregion
+
+            ManagerData NewWorker = new ManagerData
+            {
+                name = tBoxName.Text,
+                phone = tBoxPhone.Text,
+                pwd = tBoxPWD.Text,
+                Img = ImgResult.Img.ToString(),
+                administerBool = isItAdmin = (tBoxIsAdmin.Text.Equals("관리자")) ? true : false,
+                workerNum = int.Parse(tBoxWorkerNum.Text),
+                workDepartment = tBoxDepartment.Text,
+                workPosition = tBoxPosition.Text
+            };
+
+            SetResponse RegistNewWorkerResponse = await managerWorkFormFirebaseClient.SetTaskAsync("manager/" + tBoxPhone.Text, NewWorker);
+            ManagerData result = RegistNewWorkerResponse.ResultAs<ManagerData>();
         }
     }
 }
