@@ -9,7 +9,7 @@ namespace projectPracticeSecond
         public string name { get; set; }
         public string phone { get; set; }
         public string pwd { get; set; }
-        public string picture { get; set; }
+        public string Img { get; set; }
         public bool administerBool { get; set; }
         public int workerNum { get; set; }
         public string workDepartment { get; set; }

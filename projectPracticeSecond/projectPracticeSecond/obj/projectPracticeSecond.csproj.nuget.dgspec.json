@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LEE\\Desktop\\ContractPractice\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {}
+    "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LEE\\Desktop\\ContractPractice\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {
+    "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LEE\\Desktop\\ContractPractice\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
+        "projectUniqueName": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
         "projectName": "projectPracticeSecond",
-        "projectPath": "C:\\Users\\LEE\\Desktop\\ContractPractice\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
+        "projectPath": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
         "packagesPath": "C:\\Users\\LEE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LEE\\Desktop\\ContractPractice\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond\\obj\\",
+        "outputPath": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

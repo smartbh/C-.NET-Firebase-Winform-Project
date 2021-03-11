@@ -22,6 +22,9 @@ namespace projectPracticeSecond
         public delegate void SetManagerDataCallback(ManagerData Mdata);
         public SetManagerDataCallback setManagerData;
 
+        public delegate void SetFirebaseClientCallback(IFirebaseClient firebaseClient);
+        public SetFirebaseClientCallback setFirebaseClient;
+
         static private IFirebaseConfig config = new FirebaseConfig //파이어베이스 연결 아이디
         {
             AuthSecret = "NkgJnHYTWNn4JK3UP0D1kOo5fUGzoys6DFRBXrlf",
@@ -113,7 +116,7 @@ namespace projectPracticeSecond
                 MessageBox.Show(ManagerObj.pwd.ToString());
                 MessageBox.Show(ManagerObj.phone.ToString());
                 MessageBox.Show(ManagerObj.administerBool.ToString());
-                MessageBox.Show(ManagerObj.picture.ToString());
+                MessageBox.Show(ManagerObj.Img.ToString());
 
                 MessageBox.Show(ContractResponse.Body.ToString());
                 MessageBox.Show(ContractDataObj.ToString());
@@ -141,6 +144,9 @@ namespace projectPracticeSecond
                     MainForm mainForm = new MainForm();
                     this.setManagerData += new SetManagerDataCallback(mainForm.SetManagerData);
                     setManagerData(ManagerObj);
+
+                    this.setFirebaseClient += new SetFirebaseClientCallback(mainForm.SetClientData);
+                    setFirebaseClient(client);
 
                     mainForm.ShowDialog();
                     this.Close();

@@ -7,14 +7,23 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using Newtonsoft.Json;
+
 namespace projectPracticeSecond
 {
     public partial class MainForm : Form
     {
-        public ManagerData MainFormManagerData;
+        public static ManagerData MainFormManagerData;
+        public static IFirebaseClient MainFormClient;
 
         public delegate void SetManagerDataCallback(ManagerData Mobj);
         public SetManagerDataCallback setManagerData;
+
+        public delegate void SetFirebaseClientCallback(IFirebaseClient ClientObj);
+        public SetFirebaseClientCallback setFirebaseClient;
 
         public MainForm()
         {
@@ -32,13 +41,15 @@ namespace projectPracticeSecond
         /// <param name="e"></param>
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(MainFormManagerData.administerBool.ToString());
-            MessageBox.Show(MainFormManagerData.name.ToString());
-            MessageBox.Show(MainFormManagerData.phone.ToString());
-            MessageBox.Show(MainFormManagerData.pwd.ToString());
-            MessageBox.Show(MainFormManagerData.workDepartment.ToString());
-            MessageBox.Show(MainFormManagerData.workerNum.ToString());
-            MessageBox.Show(MainFormManagerData.workPosition.ToString());
+            //MessageBox.Show(MainFormManagerData.administerBool.ToString());
+            //MessageBox.Show(MainFormManagerData.name.ToString());
+            //MessageBox.Show(MainFormManagerData.phone.ToString());
+            //MessageBox.Show(MainFormManagerData.pwd.ToString());
+            //MessageBox.Show(MainFormManagerData.workDepartment.ToString());
+            //MessageBox.Show(MainFormManagerData.workerNum.ToString());
+            //MessageBox.Show(MainFormManagerData.workPosition.ToString());
+
+            MessageBox.Show(MainFormClient.ToString());
 
             lblWorkNumTXT.Text = MainFormManagerData.workerNum.ToString();
             lblWorkNameTXT.Text = MainFormManagerData.name;
@@ -60,6 +71,11 @@ namespace projectPracticeSecond
         public void SetManagerData(ManagerData data)
         {
             MainFormManagerData = data;
+        }
+
+        public void SetClientData(IFirebaseClient Cobj)
+        {
+            MainFormClient = Cobj;
         }
 
         private Point mousePoint; //마우스 포인트(이동,최대화용)
@@ -241,8 +257,14 @@ namespace projectPracticeSecond
         {
             panel1.Controls.Clear();
             managerWorkForm managerWorkForm = new managerWorkForm();
+
             this.setManagerData += new SetManagerDataCallback(managerWorkForm.SetManagerData);
             setManagerData(MainFormManagerData);
+
+            this.setFirebaseClient += new SetFirebaseClientCallback(managerWorkForm.SetClientData);
+            setFirebaseClient(MainFormClient);
+
+
 
             managerWorkForm.TopLevel = false;
             managerWorkForm.TopMost = true;
