@@ -50,6 +50,7 @@ namespace projectPracticeSecond
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegist = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
+            this.tboxSearch = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -249,15 +250,17 @@ namespace projectPracticeSecond
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.tboxSearch, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnRegist, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnModify, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(627, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.88496F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.11504F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 217F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(170, 444);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
@@ -266,7 +269,7 @@ namespace projectPracticeSecond
             this.btnRegist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRegist.Location = new System.Drawing.Point(3, 3);
             this.btnRegist.Name = "btnRegist";
-            this.btnRegist.Size = new System.Drawing.Size(164, 109);
+            this.btnRegist.Size = new System.Drawing.Size(164, 99);
             this.btnRegist.TabIndex = 0;
             this.btnRegist.Text = "등록하기";
             this.btnRegist.UseVisualStyleBackColor = true;
@@ -274,13 +277,20 @@ namespace projectPracticeSecond
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(3, 118);
+            this.btnModify.Location = new System.Drawing.Point(3, 108);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(164, 105);
+            this.btnModify.Size = new System.Drawing.Size(164, 95);
             this.btnModify.TabIndex = 1;
             this.btnModify.Text = "수정하기";
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
+            // 
+            // tboxSearch
+            // 
+            this.tboxSearch.Location = new System.Drawing.Point(3, 209);
+            this.tboxSearch.Name = "tboxSearch";
+            this.tboxSearch.Size = new System.Drawing.Size(164, 27);
+            this.tboxSearch.TabIndex = 7;
             // 
             // managerWorkForm
             // 
@@ -297,6 +307,7 @@ namespace projectPracticeSecond
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -325,5 +336,6 @@ namespace projectPracticeSecond
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox hone;
         private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.TextBox tboxSearch;
     }
 }
