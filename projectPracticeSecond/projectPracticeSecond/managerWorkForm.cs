@@ -48,11 +48,6 @@ namespace projectPracticeSecond
             MessageBox.Show(managerWorkFormFirebaseClient.ToString());
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnImgLoad_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -70,7 +65,7 @@ namespace projectPracticeSecond
         private async void btnRegist_Click(object sender, EventArgs e)
         {
             bool isItAdmin;
-         //이미지를 등록하는 코드
+            //이미지를 등록하는 코드
             #region
             MemoryStream ms = new MemoryStream();
 
@@ -85,9 +80,9 @@ namespace projectPracticeSecond
                 Img = output
             };
 
-            SetResponse response = await managerWorkFormFirebaseClient.SetTaskAsync("manager/010-1111-2222/", data);
+            //SetResponse response = await managerWorkFormFirebaseClient.SetTaskAsync("manager/010-1111-2222/", data);
 
-            Image_Modal ImgResult = response.ResultAs<Image_Modal>();
+            //Image_Modal ImgResult = response.ResultAs<Image_Modal>();
 
             MessageBox.Show("이미지 등록됨!");
             #endregion
@@ -97,7 +92,7 @@ namespace projectPracticeSecond
                 name = tBoxName.Text,
                 phone = tBoxPhone.Text,
                 pwd = tBoxPWD.Text,
-                Img = ImgResult.Img.ToString(),
+                Img = data.Img.ToString(),
                 administerBool = isItAdmin = (tBoxIsAdmin.Text.Equals("관리자")) ? true : false,
                 workerNum = int.Parse(tBoxWorkerNum.Text),
                 workDepartment = tBoxDepartment.Text,
@@ -106,6 +101,11 @@ namespace projectPracticeSecond
 
             SetResponse RegistNewWorkerResponse = await managerWorkFormFirebaseClient.SetTaskAsync("manager/" + tBoxPhone.Text, NewWorker);
             ManagerData result = RegistNewWorkerResponse.ResultAs<ManagerData>();
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

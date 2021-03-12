@@ -281,6 +281,13 @@ namespace projectPracticeSecond
             managerWorkForm.Show();
         }
 
-
+        //로그아웃 하는 버튼
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+            this.Close();
+        }
     }
 }

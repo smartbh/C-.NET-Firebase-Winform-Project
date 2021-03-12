@@ -54,6 +54,7 @@ namespace projectPracticeSecond
             this.btnCustomerManage = new System.Windows.Forms.Button();
             this.btnContractManage = new System.Windows.Forms.Button();
             this.MainTitlePanel = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.MainBarPanel.SuspendLayout();
             this.MainContentPanel.SuspendLayout();
             this.pnlWorker.SuspendLayout();
@@ -124,6 +125,7 @@ namespace projectPracticeSecond
             // MainContentPanel
             // 
             this.MainContentPanel.AutoScroll = true;
+            this.MainContentPanel.Controls.Add(this.btnLogout);
             this.MainContentPanel.Controls.Add(this.panel1);
             this.MainContentPanel.Controls.Add(this.pnlWorker);
             this.MainContentPanel.Controls.Add(this.MainButtonPanel);
@@ -351,6 +353,16 @@ namespace projectPracticeSecond
             this.MainTitlePanel.Size = new System.Drawing.Size(1942, 72);
             this.MainTitlePanel.TabIndex = 0;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(1689, 523);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(226, 51);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "로그아웃";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -401,5 +413,6 @@ namespace projectPracticeSecond
         private System.Windows.Forms.Label lblWorkNumTXT;
         private System.Windows.Forms.Label lblWorkName;
         private System.Windows.Forms.Label lblWorkNum;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

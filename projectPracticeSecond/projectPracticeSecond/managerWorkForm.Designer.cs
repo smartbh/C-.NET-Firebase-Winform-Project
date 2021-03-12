@@ -49,6 +49,7 @@ namespace projectPracticeSecond
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegist = new System.Windows.Forms.Button();
+            this.btnModify = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -152,7 +153,6 @@ namespace projectPracticeSecond
             this.label7.Size = new System.Drawing.Size(47, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "부서 :";
-            this.label7.Click += new System.EventHandler(this.label1_Click);
             // 
             // label6
             // 
@@ -162,7 +162,6 @@ namespace projectPracticeSecond
             this.label6.Size = new System.Drawing.Size(62, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "관리자 :";
-            this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBoxPosition
             // 
@@ -179,7 +178,6 @@ namespace projectPracticeSecond
             this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "직책 :";
-            this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBoxPhone
             // 
@@ -196,7 +194,6 @@ namespace projectPracticeSecond
             this.label4.Size = new System.Drawing.Size(77, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "전화번호 :";
-            this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBoxWorkerNum
             // 
@@ -213,7 +210,6 @@ namespace projectPracticeSecond
             this.label3.Size = new System.Drawing.Size(47, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "사번 :";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBoxPWD
             // 
@@ -231,7 +227,6 @@ namespace projectPracticeSecond
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "비밀번호 :";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBoxName
             // 
@@ -248,7 +243,6 @@ namespace projectPracticeSecond
             this.label1.Size = new System.Drawing.Size(52, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "이름 : ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -256,6 +250,7 @@ namespace projectPracticeSecond
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.btnRegist, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnModify, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(627, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -269,7 +264,6 @@ namespace projectPracticeSecond
             // btnRegist
             // 
             this.btnRegist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRegist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRegist.Location = new System.Drawing.Point(3, 3);
             this.btnRegist.Name = "btnRegist";
             this.btnRegist.Size = new System.Drawing.Size(164, 109);
@@ -277,6 +271,16 @@ namespace projectPracticeSecond
             this.btnRegist.Text = "등록하기";
             this.btnRegist.UseVisualStyleBackColor = true;
             this.btnRegist.Click += new System.EventHandler(this.btnRegist_Click);
+            // 
+            // btnModify
+            // 
+            this.btnModify.Location = new System.Drawing.Point(3, 118);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(164, 105);
+            this.btnModify.TabIndex = 1;
+            this.btnModify.Text = "수정하기";
+            this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // managerWorkForm
             // 
@@ -320,5 +324,6 @@ namespace projectPracticeSecond
         private System.Windows.Forms.Button btnImgLoad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox hone;
+        private System.Windows.Forms.Button btnModify;
     }
 }
