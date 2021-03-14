@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {}
+    "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {}
   },
   "projects": {
-    "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {
+    "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
+        "projectUniqueName": "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
         "projectName": "projectPracticeSecond",
-        "projectPath": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
-        "packagesPath": "C:\\Users\\LEE\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\obj\\",
+        "projectPath": "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LEE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
