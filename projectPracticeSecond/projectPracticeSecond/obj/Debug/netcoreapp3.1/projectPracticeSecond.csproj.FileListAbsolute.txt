@@ -70,7 +70,6 @@ D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\bin\Debug\netcor
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\bin\Debug\netcoreapp3.1\MetroFramework.dll
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\bin\Debug\netcoreapp3.1\RestSharp.dll
-D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.csprojAssemblyReference.cache
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.Login.resources
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.MainForm.resources
 D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.managerWorkForm.resources
@@ -118,3 +117,4 @@ D:\git\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreap
 D:\git\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.dll
 D:\git\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.pdb
 D:\git\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.genruntimeconfig.cache
+D:\github\MyProject\projectPracticeSecond\projectPracticeSecond\obj\Debug\netcoreapp3.1\projectPracticeSecond.csprojAssemblyReference.cache

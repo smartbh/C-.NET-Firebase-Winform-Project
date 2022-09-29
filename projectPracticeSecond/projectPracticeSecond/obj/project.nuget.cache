@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "HmXBnwtCexOjRstnLZIpsPOWNprOrwuz2JdNM2ayZ1ArUp7SXO8sJ1JrWqG5mblX0OUoDNu9Fvld/mc/BVmj9w==",
+  "dgSpecHash": "tf0r/hrek+s25DL40XXTmth4kNAHJym/eCrtSfYDLSkviQ8AhvfH0mUuHTkMs/qQ205qJH6RlDr8e8Z3fo7vQg==",
   "success": true,
-  "projectFilePath": "D:\\git\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
+  "projectFilePath": "D:\\github\\MyProject\\projectPracticeSecond\\projectPracticeSecond\\projectPracticeSecond.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\dg.advanceddatagridview\\1.1.25411.9\\dg.advanceddatagridview.1.1.25411.9.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\firesharp\\1.1.0\\firesharp.1.1.0.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\firesharp.serialization.jsonnet\\1.1.0\\firesharp.serialization.jsonnet.1.1.0.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\metroframework\\1.2.0.3\\metroframework.1.2.0.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\metroframework.design\\1.2.0.3\\metroframework.design.1.2.0.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\metroframework.fonts\\1.2.0.3\\metroframework.fonts.1.2.0.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\metroframework.runtime\\1.2.0.3\\metroframework.runtime.1.2.0.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\restsharp\\104.4.0\\restsharp.104.4.0.nupkg.sha512"
+    "C:\\Users\\LEE\\.nuget\\packages\\dg.advanceddatagridview\\1.1.25411.9\\dg.advanceddatagridview.1.1.25411.9.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\firesharp\\1.1.0\\firesharp.1.1.0.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\firesharp.serialization.jsonnet\\1.1.0\\firesharp.serialization.jsonnet.1.1.0.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\metroframework\\1.2.0.3\\metroframework.1.2.0.3.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\metroframework.design\\1.2.0.3\\metroframework.design.1.2.0.3.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\metroframework.fonts\\1.2.0.3\\metroframework.fonts.1.2.0.3.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\metroframework.runtime\\1.2.0.3\\metroframework.runtime.1.2.0.3.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\LEE\\.nuget\\packages\\restsharp\\104.4.0\\restsharp.104.4.0.nupkg.sha512"
   ],
   "logs": [
     {
