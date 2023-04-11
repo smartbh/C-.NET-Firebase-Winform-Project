@@ -256,8 +256,7 @@ namespace projectPracticeSecond
                 this.WindowState = FormWindowState.Maximized;
             }
         }
+
         #endregion
-
-
     }
 }
